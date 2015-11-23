@@ -19,25 +19,32 @@ command line> for file in /path/to/the/comment/; do cat $file | python mapper.py
 
 Q2a:
 Find the date that has the highest number of posts mentioning each of the brands
+
 command line> for file in /path/to/the/comment/; do cat $file | python mapper.py; done | sort -k1,1| python combiner.py | sort -k1,1 | python reducer.py
 
 Q2b:
 Find the peak hour with the most posts.
+
 command line> for file in /path/to/the/comment/; do cat $file | python mapper.py; done | sort -k1,1| python combiner.py | sort -k1,1 | python reducer.py
 
 Q3:
 Tokenize the comments and retrieve the top 10 mentioned Chinese terms associated with each brand from the texts. You may use 3rd party libraries such as Jieba to complete this task.
+
 command line> for file in /path/to/the/comment/; do cat $file | python mapper.py; done | sort -k1,1 | python combiner.py | python mapper2.py | LC_ALL='C' sort -k1,1 | python reducer.py
 
 Q4a: 
 Count the number of reposts and comments per day (as separate counts), per brand
+
 This command line can get number of comments per day per brand
+
 command line> for file in /path/to/the/comment/; do cat $file | python mapper1.py; done | sort -k1,1| python combiner1.py | sort -k2,2 | python reducer1.py
 
 This command line can get number of reposts per day per brand
+
 command line> for file in /path/to/the/reposts/; do cat $file | python mapper2.py; done | sort -k1,1 | python combiner2.py | sort -k1,1 | python reducer2.py
 
-b: Plot the count over the entire timeframe (For this problem, currently I only analyze comments data)
+Q4b: Plot the count over the entire timeframe (For this problem, currently I only analyze comments data)
+
 cat comment_statistic.txt | python plotgraph.py
 
 
