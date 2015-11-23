@@ -32,9 +32,9 @@ for line in sys.stdin:
 			retweeted__date = data['retweeted_status']['created_at']
 			retweeted__date = retweeted__date[1] + " " + retweeted__date[2] + " " + retweeted__date[5] 
 			if brand1.lower() in retweeted_text or "mk" in retweeted_text or "michaelkors" in retweeted_text:
-				print str(data['reply_comment']['id']) + "," + brand1 + "\t" + retweeted__date + "\t" + str(1)
+				print str(data['retweeted_status']['id']) + "," + brand1 + "\t" + retweeted__date + "\t" + str(1)
 			if brand2.lower() in retweeted_text or "ks" in retweeted_text or "katespade" in retweeted_text:
-				print str(data['reply_comment']['id']) + "," + brand2 + "\t"+ retweeted__date + "\t" + str(1)
+				print str(data['retweeted_status']['id']) + "," + brand2 + "\t"+ retweeted__date + "\t" + str(1)
 
 
 	except ValueError as e:
