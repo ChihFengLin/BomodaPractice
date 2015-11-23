@@ -49,7 +49,6 @@ for line in sys.stdin:
 		brand, date, count = line.split("\t")
 		month, day, year = date.split()
 
-
 		if (month == "Aug"):
 			month = "08"
 		elif (month == "Sep"):
@@ -59,7 +58,6 @@ for line in sys.stdin:
 		else:
 			continue
 		
-
 		if (brand == "Michael Kors"):
 			heapq.heappush(list_M, (int(month+day), int(count)))
 			dates_M.append(month + "/" + day + "/" + year)

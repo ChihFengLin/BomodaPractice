@@ -1,0 +1,7 @@
+5. Sampling: Explain possible sampling bias through Weibo, such as gender bias, etc.
+
+The most straightforward bias from weibo is the nationality. Because weibo is mostlt used by Chinese and the users in other contries seldom use this platform 
+
+6. What are some possible algorithms to identify users who showed interest in Michael Kors over Kate Spade? What are some data points that can be used to illustrate the algorithm's utility? Give a couple examples and discuss pros and cons.
+
+ 
