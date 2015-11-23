@@ -8,6 +8,7 @@ import sys
 
 
 total_count = 0
+previous_brand = ""
 first = True
 for line in sys.stdin:
 	try:
