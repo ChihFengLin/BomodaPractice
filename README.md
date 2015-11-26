@@ -3,6 +3,8 @@
 Data Location:
 https://drive.google.com/file/d/0B5ADI2usunVQOGU5RE5tT281Tzg/view?usp=sharing
 
+The provided archive contains a collection of data collected from Weibo.com pertaining to the brands Michael Kors and Kate Spade.
+
 Q1a:
 Count the number of posts mentioning each of the included brand names as well as the users who mentioned them. Hint: Pay attention to the variation of names. 
 
